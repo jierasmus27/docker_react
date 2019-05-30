@@ -3,7 +3,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t jerasmus/docker-react:latest -f Dockerfile.dev .
+  - docker build -t jerasmus/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run jeramsus/docker-react:latest npm run test -- --coverage
+  - docker run jerasmus/docker-react npm run test -- --coverage
